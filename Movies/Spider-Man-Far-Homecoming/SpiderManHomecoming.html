@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="SpiderManHomecoming.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man: Homecoming</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Spider-Man: Homecoming</span></h2>
+            <p>
+                Der in New York lebende, 15-jährige Peter Parker ist wie sein bester Freund Ned ein Außenseiter an der New Yorker Midtown High School. Nachdem er als Spider-Man an der Seite von Tony Stark als Iron Man am Flughafen Halle-Leipzig gegen Captain Americas aufsässige Avengers vorgegangen war, hinterließ ihm Tony einen neuen Hightech-Spider-Man-Anzug, dessen viele Funktionen Peter nach und nach entdecken muss. Tony will ihn noch nicht zu einem offiziellen Mitglied der Avengers machen, doch Peter fragt fast täglich bei Happy, Tonys Sicherheitschef, nach, ob er für irgendeine Mission gebraucht wird, und hält sich ständig in Bereitschaft für einen möglichen Rückruf.
+            </p>
+            <a href="SpiderManHomecomingPlay.html" class="play"><img src="play.png" alt="">Film anschauen</a>
+            <br>
+            <br>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Trailer anschauen</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Trailer.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

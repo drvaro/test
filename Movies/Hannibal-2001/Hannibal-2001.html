@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Hannibal-2001.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannibal-2001</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Hannibal 2001</span></h2>
+            <p>
+                Etwa zehn Jahre nach seiner Flucht lebt Hannibal Lecter als Museumskurator der Capponi-Bibliothek unter dem falschen Namen Dr. Fell in Florenz. Der italienische Kommissar Rinaldo Pazzi, ein Nachkomme der Familie Pazzi, soll das rätselhafte Verschwinden seines Vorgängers aufklären. Über ein detailliertes Täterprofil auf der Internetseite des FBI kommt er dahinter, dass es sich bei dem kunstbeflissenen Kulturliebhaber Dr. Fell in Wirklichkeit um den weltweit gesuchten Serienmörder Hannibal Lecter handelt, gleichzeitig stellt Inspector Pazzi fest, dass eines seiner früheren Opfer ein Kopfgeld von drei Millionen Dollar auf Lecter ausgesetzt hat.
+            </p>
+            <a href="Hannibal-2001Play.html" class="play"><img src="play.png" alt="">Film anschauen</a>
+            <br>
+            <br>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Trailer anschauen</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Trailer.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

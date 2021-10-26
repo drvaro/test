@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="SpiderManFarFromHome.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man: Far From Home</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Spider-Man: Far From Home</span></h2>
+            <p>
+                Nick Fury und Maria Hill begeben sich in das Städtchen Ixtenco in Mexiko, dessen Einwohner von einem energiereichen Zyklon berichtet haben, der ein Gesicht getragen haben soll und hier vieles zerstört hat. Eine unbekannte Person stößt zu ihnen, die ihnen hilft, die Kreatur zu bekämpfen.
+            </p>
+            <a href="SpiderManFarFromHomePlay.html" class="play"><img src="play.png" alt="">Film anschauen</a>
+            <br>
+            <br>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Trailer anschauen</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Trailer.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Hannibal-2001.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannibal-2001</title>
+</head>
+<body>
+    <header>
+    <div class="toggle"><a href="https://fvs.io/redirector?token=dUw3bU1Zb1NFVlE5dkpRTzREUDlZMnBUb1hqdlk1RFhNYkVyNTZtenhTQlIvV2RJNjdCZGxwQzBXVC9uTG1XN0dXKzdRRGw4ZGtQTkNjMzErNy94ZjlwbmlqZ2Q2Rk5WdHg5dUF0YjlCMzNCRVVVQkY4aVpmR0dKKzA0bFlFWUxFNkNYSUhSVHB4WkwvYmhDaVZDQ1J4RS94bFlTVTQ1UzpnWm1sOWtDc2xSakNnWnpJRnptdlFBPT0"><img src="zuruck.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+              <body onLoad="toggle()">
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Film.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
